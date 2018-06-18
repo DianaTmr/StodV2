@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF"
+    tools:context=".Analysis">
+
+    <LinearLayout
+        android:id="@+id/sintoma_find"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <Button
+            android:id="@+id/btnOrder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:text="@string/add_sintoma"
+            android:textSize="12dp"
+            android:textColor="#777777"
+            android:background="#F3F3F3"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ListView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:visibility="invisible"
+                android:id="@+id/tvItemSelected" />
+
+            <TextView
+                android:id="@+id/tvEmptyText"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textAlignment="center"
+                android:visibility="visible"
+                android:gravity="center"
+                android:text="No hay ningún síntoma añadido" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnEvaluar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Evaluar"
+            android:visibility="invisible"
+            android:textColor="@color/white"
+            android:background="#50935B" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@id/sintoma_result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="invisible">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="25dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="11dp"
+                android:textStyle="bold"
+                android:layout_marginBottom="5dp"
+                android:textColor="#51775e"
+                android:text="MEJOR RESULTADO:" />
+
+
+            <TextView
+                android:id="@+id/tv_enfermedad"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="22dp"
+                android:fontFamily="sans-serif"
+                android:textColor="#000" />
+
+            <TextView
+                android:id="@+id/tv_gravedad"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:textSize="12dp"
+                android:textColor="#e93333" />
+
+            <TextView
+                android:id="@+id/tv_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:textSize="12dp"
+                android:textColor="#000" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</FrameLayout>

@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">STOD</string>
+    <string name="title_home">Inicio</string>
+    <string name="title_analysis">Análisis</string>
+    <string name="title_profile">Perfil</string>
+    <string name="title_chat">Chat</string>
+    <string name="title_settings">Ajustes</string>
+
+    <string name="title_activity_login">Sign in</string>
+    <string name="pass">Contraseña</string>
+    <string name="email">Dirección de correo electrónico</string>
+    <string name="entrar">Entrar</string>
+    <string name="newaccount">Crear cuenta nueva</string>
+    <string name="resetpass">Recordar contraseña</string>
+    <string name="volver">Volver</string>
+    <string name="bienvenida">Te damos la bienvenida a STOD. La aplicación donde puedes encontrar temas de diálogo referidos a tu enfermedad o conocer que te ocurre según tus síntomas.</string>
+
+    <string name="add_sintoma">Agregar sintomas"</string>
+    <string-array name="symptom_list">
+        <item>Fiebre</item>
+        <item>Nauseas</item>
+        <item>Dolor articular</item>
+        <item>Dolor abdominal</item>
+        <item>Migrañas</item>
+        <item>Tos</item>
+        <item>Temblores</item>
+        <item>Escalofrios</item>
+        <item>Dificultad respiratoria</item>
+        <item>Falta de apetito</item>
+        <item>Hemorragia</item>
+    </string-array>
+</resources>

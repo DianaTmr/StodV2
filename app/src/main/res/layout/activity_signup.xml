@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E3EBE4"
+    tools:context=".SignUp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/loginll2"
+        android:orientation="vertical"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="45dp"
+        android:layout_marginEnd="45dp"
+        android:layout_below="@id/loginll1">
+
+        <EditText
+            android:id="@+id/ed_email"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:inputType="textEmailAddress"
+            android:background="@drawable/edittext_shadow"
+            android:hint="@string/email"
+            android:drawableStart="@drawable/ic_email_black_24dp"
+            android:drawablePadding="12dp"
+            android:textSize="13sp"
+            android:padding="8dp"
+            />
+        <EditText
+            android:id="@+id/ed_user"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:inputType="text"
+            android:background="@drawable/edittext_shadow"
+            android:hint="Nombre de usuario"
+            android:layout_marginTop="12dp"
+            android:padding="8dp"
+            android:textSize="13sp"
+            android:drawableStart="@drawable/ic_person_black_24dp"
+            android:drawablePadding="12dp"
+            />
+        <EditText
+            android:id="@+id/ed_password"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:inputType="textPassword"
+            android:background="@drawable/edittext_shadow"
+            android:hint="@string/pass"
+            android:layout_marginTop="12dp"
+            android:padding="8dp"
+            android:textSize="13sp"
+            android:drawableStart="@drawable/ic_vpn_key_black_24dp"
+            android:drawablePadding="12dp"
+            />
+        <EditText
+            android:id="@+id/ed_password2"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:inputType="textPassword"
+            android:background="@drawable/edittext_shadow"
+            android:hint="Repita contraseña"
+            android:layout_marginTop="12dp"
+            android:padding="8dp"
+            android:textSize="13sp"
+            android:drawableStart="@drawable/ic_vpn_key_black_24dp"
+            android:drawablePadding="12dp"
+            />
+
+        <Button
+            android:id="@+id/btnEntrar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/gradient_green"
+            android:text="@string/entrar"
+            android:textColor="@android:color/white" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginTop="50dp"
+            >
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/loginll3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/ellipses"
+            android:scaleType="fitEnd"/>
+    </LinearLayout>
+
+</RelativeLayout>
